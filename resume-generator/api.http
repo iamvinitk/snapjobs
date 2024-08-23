@@ -1,0 +1,86 @@
+POST http://localhost:5000/resume
+Content-Type: application/json
+
+{
+  "full_name": "James Bond",
+  "location": "Hollywood, CA",
+  "phone_number": "669-669-6690",
+  "email": "007@jamesbond.com",
+  "linkedin_url": "https://www.linkedin.com/in/jamesbond007",
+  "linkedin_short_url": "linkedin.com/in/jamesbond007",
+  "github_url": "https://github.com/jamesbond007",
+  "github_short_url": "github.com/jamesbond007",
+  "website_url": "https://www.jamesbond.com",
+  "website_short_url": "jamesbond.com",
+  "education": [
+    {
+      "university": "Stanford University",
+      "location": "Stanford, CA",
+      "degree": "Master of Science, Computer Science",
+      "date": "Aug 2021 -- May 2023"
+    },
+    {
+      "university": "Oxford University",
+      "location": "Oxford, UK",
+      "degree": "Bachelor of Science, Computer Science",
+      "date": "Jul 2017 -- Apr 2021"
+    }
+  ],
+  "experience": [
+    {
+      "title": "Agent 007",
+      "company": "MI6",
+      "location": "London, UK",
+      "date": "June 2023 -- Present",
+      "description": [
+        "Led a team of 5 agents to successfully infiltrate the enemy base and retrieve the stolen nuclear codes, preventing a global catastrophe.",
+        "Developed a Python script to automate the process of decrypting enemy communications, resulting in a 75% reduction in time spent on decryption.",
+        "Collaborated with the Q branch to develop a new gadget that allowed for remote hacking of enemy systems, significantly enhancing our intelligence gathering capabilities.",
+        "Achievement : Awarded the MI6 Medal of Valor for my exceptional performance in the field."
+      ]
+    },
+    {
+      "title": "Special Agent",
+      "company": "CIA",
+      "location": "Langley, VA",
+      "date": "May 2021 -- June 2023",
+      "description": [
+        "Analyzed intelligence reports to identify potential threats to national security and developed strategies to neutralize them.",
+        "Conducted secret missions in hostile territories to gather critical intelligence on enemy activities.",
+        "Worked closely with foreign intelligence agencies to share information and coordinate joint operations.",
+        "Achievement : Received the CIA Director's Award for my outstanding contributions to national security."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Scaling Depression Level",
+      "date": "",
+      "tech_stack": "Python, ML (CNN, LSTM, NLP)",
+      "description": [
+        "A machine learning model with 89% accuracy used to detect depression levels of users by Twitter analysis and image processing. Published a Research Paper at Springer book series titled “Scaling Depression Level Through Facial Image Processing and Social Media Analysis”"
+      ]
+    },
+    {
+      "title": "Real-time Object Detection",
+      "date": "",
+      "tech_stack": "Python, OpenCV, YOLO",
+      "description": [
+        "Developed a real-time object detection system using YOLOv3 and OpenCV to detect objects in live video streams with an accuracy of 95%."
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "Languages",
+      "value": "Python, C#, C, C++, Ruby, Java, JavaScript, TypeScript, HTML, CSS"
+    },
+    {
+      "name": "Ammunition",
+      "value": "Pistol, Rifle, Shotgun, Machine Gun, Sniper Rifle, Grenade Launcher, Rocket Launcher"
+    }
+  ]
+}
+
+###
+GET http://localhost:5000/resume

@@ -1,0 +1,8 @@
+from enum import StrEnum
+
+
+class Section(StrEnum):
+    EDUCATION = "EDUCATION_SECTION"
+    EXPERIENCE = "EXPERIENCE_SECTION"
+    PROJECTS = "PROJECTS_SECTION"
+    SKILLS = "SKILLS_SECTION"
